@@ -1,0 +1,13 @@
+~ when we access a web page, the browser will send a request to the server where
+  the page is hosted on the internet
+~ Server is basically a computer which connected to the internet and be able to receive
+  request like this
+~ when the server is receive the request, it will take up all the files that make up the website
+  and send them back to the browser
+  ~ we say the server is response to the browser
+  ? what files that made up the website
+    ~ files with extension ends .html(HTML code), .css(CSS code), .js(JAVASCRIPT code), .jpg, .txt and more.
+~ the browser that receive the files from the server, render the files into a webpage
+~ the code(JAVASCRIPT, HTML, CSS) that understand by the browser called the front-end Web Development.
+~ whenever the files that make up the website stored on the web server and sent to the browser as they
+  are we say that we have STATIC website
