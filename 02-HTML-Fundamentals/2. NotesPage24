@@ -1,0 +1,6 @@
+~ Element consists of opening tag, content, closing tag.
+  ~ opening tag => name of the element, wrapped in < and >.
+  ~ content => content of the element, in this example the text.
+    ~ the content might be another element(child element).
+    ~ some elements have no content(e.g. <img>);
+  ~ closing tag => name of the element, wrapped in </ and >.
