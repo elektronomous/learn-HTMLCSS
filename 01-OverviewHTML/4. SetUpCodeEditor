@@ -1,0 +1,7 @@
+~ Installing Visual Studio Code
+  ~ Installing extension called Prettier
+  ~ Inside the Visual Studio Code Setting, search for default formatter and change it to Prettier.
+    ~ Search for Format On Save, and checklist => will format when you save it
+    ~ Search for Auto Save and change it to onFocusChange => will save your work, when you move from your
+      current window or editor.
+    ~ Search for Tab Size, and change it to 2.
