@@ -1,0 +1,9 @@
+~ when we try to access udemy.com for example, it page is always changing because
+  there are acitivities like update the videos length, create an account, student
+  give new rating, new courses added and more. to make this running, udemy.com need
+  something on their system like a database, to keep up to date on their changing data.
+~ To execute something on system on a webserver, developers use some kind of back-end
+  language Node-JS, PHP, or Python. so what these language do is to take data out of 
+  the database and assemble all of the data into files which then sent to the browser
+  as the response.
+~ those whole process is called back-end web Development
