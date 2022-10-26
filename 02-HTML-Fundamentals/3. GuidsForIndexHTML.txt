@@ -7,3 +7,25 @@
  ~ the body is for the elements that will visible on the page(browser window).
 4# create a first heading inside the body element.
  ~ the <html> element is the parent element of the <head> and <body> element.
+
+~ the purpose of using heading elements is break up big blocks of text into more logical
+  sections.
+  ~ and basically to add a title to each of the sections.
+  ~ the heading elements has hirarchy, which we can use from the biggest(h1),
+    to the smallest(h6) heading element.
+5# commenting out the 4# and create heading h1, h2, h3 using text inside the content.txt
+6# fill each of the sections of heading, with paragraphs using the content.txt
+ ~ each and every page should only have one h1 element.
+7# create a bold for the author name and italic on 'fundamental' word before 'technologies' word.
+ ~ you can use <b> element or <strong> element to make the text bold.
+   ~ but you should use the <strong> element because it has a semantic meaning for the text.
+ ~ same for the making the text italic, you can use <i> or <em>.
+   ~ but you should use the <em> element because it has a semantic meaning for the text
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| CHALLENGE =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+~ make the first character of each of this word to be bold:
+  Hyper
+  Text
+  Markup
+  Language
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=
