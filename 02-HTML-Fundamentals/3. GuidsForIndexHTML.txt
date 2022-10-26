@@ -1,0 +1,9 @@
+1# first write the doctype
+ ~ the doctype indicate that file is an HTML file.
+2# create head and body element
+ ~ each of the HTML file always start with this structure.
+ ~ head elements is basically for things that are not visible in the browser window.
+ 3# specify the title of the page on the head element
+ ~ the body is for the elements that will visible on the page(browser window).
+4# create a first heading inside the body element.
+ ~ the <html> element is the parent element of the <head> and <body> element.
