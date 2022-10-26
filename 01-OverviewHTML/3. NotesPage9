@@ -1,0 +1,18 @@
+~ HTML is responsible for the content of the page
+  ~ so that's the text, the images, the buttons.
+~ CSS is responsible for the representation of that content.
+  ~ for styling and for laying out the elements of the webpage.
+~ JAVASCRIPT is the front-end language which allow us to add dynamic 
+  and interactive effect to the webpage.
+  ~ we can also use it to manipulate the content(HTML code) or the CSS
+    , to load data from web servers, event to build entire front-end applications
+
+~ HTML is represent the NOUNS, for example is saying that P element is a paragraph
+~ CSS is represent the ADJECTIVE, because it basically describe the NOUNS. 
+  ~ for example:
+        p {
+            color: red;
+        }
+    saying that paragraph text is red
+~ JAVASCRIPT is represent the VERBS, because it allows to hide or manipulate a contents.
+  ~ for example, p.hide() will hide the contents of the paragraph text.
