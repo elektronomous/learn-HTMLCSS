@@ -29,3 +29,11 @@
   Markup
   Language
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=
+
+ ~ we can create an order list element using <ol> and <li> which order element is creating a number like 1. 2. 3. 
+   and so on.
+   ~ you start create an order list using <ol> as the sign that the order begin, and <li> to give the number
+ ~ also we can create unorder list element using <ul> and <li> which does the same like the order list but instead
+   of number, it create a bullet point.
+8# create an order list for word after '3 parts:'
+9# create an unorder list for word after 'Here are 5 of them:'
