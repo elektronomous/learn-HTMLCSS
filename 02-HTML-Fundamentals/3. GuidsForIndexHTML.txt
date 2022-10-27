@@ -102,5 +102,15 @@
   ~ the common way to group the blog-post is <article> element, another container element.
 19# group the blog-post using <article> element
   ~ when we have a bottom-part of a page, like 'Related Post', or link to another article.
-    we usually group them using <footer> element.
+    we usually group them using <aside> element. it's like saying navigation page but in bottom.
+  ~ or we have secondary information we use <aside> element
+  ~ 
+  ~ when we have mini information and it position on the botton we use <footer> element.
 20# create <footer> element after the <article> element.
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| CHALLENGE =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+~ create an <aside> element with image file called 'related-1', 'related-2', 'related-3' with
+  75x75 pixel dimension and its title using the anchor element and its author, with unorder element
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=
