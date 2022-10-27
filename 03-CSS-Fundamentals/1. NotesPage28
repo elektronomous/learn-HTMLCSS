@@ -1,0 +1,50 @@
+~ CSS stands for Cascading Style Sheets
+~ CSS describe the visual style and presentation of the content
+  written in HTML
+~ CSS consists of countless properties that developers use to format
+  the content: properties about font, text, spacing, layout, etc.
+~ The selector name is same with the element, or the attribute specified
+  on that element.
+~ the declaration is the statement that you write. for example
+  color: red;
+  font-weight: bold;
+  and so on.
+~ the declartion is the whole block wrapped after open bracker({) to close bracket(})
+
+        h1 {
+            color: red;
+            font-weight: bold;
+        }
+
+  ~ h1 => selector
+  ~ { ----|
+        |-- declartion block
+    } ----|
+  ~ color => property
+  ~ red => value
+~ there are 3 ways to specified CSS code
+  ~ inline CSS => you write the CSS code inside the html element, via the attribute style.
+    for example.
+    ~ <h1 style="color: red;">The Code Magazine</h1>
+
+  ~ internal CSS => you write the CSS code using the <style> element inside the <head> element.
+    for example
+    ~ <head>
+        <style>
+          h1 {
+            color: red;
+            font-weight: bold;
+          }
+        </style>
+      </head>
+  ~ external CSS => you write the CSS code into a file that has extension .css.
+    for example
+    -- style.css --
+    h1 {
+        color: red;
+        font-weight: bold;
+    }
+    ~ you load this css file on <head> element using <link> element like this
+      <link rel="stylesheet" href="/path/to/your/css/file.css" />
+    ~ the <link> element only do connecting HTML to a CSS file.
+    ~ the rel attribute tell the HTML that this is the CSS file.
