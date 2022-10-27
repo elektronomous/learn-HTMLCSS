@@ -83,3 +83,24 @@
 ~ create a link inside blog.html to go back to index.html
 
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=
+
+  ~ The page we build so far is lacking of structure, because the element appear one after the other.
+  ~ we need someway to group them, to divided every section so we can create a structure for the page.
+  ~ That's why we need container element to group the element.
+  ~ if you look at the 15# you have page navigation right. to make a section for navigation, we use nav
+    element
+16# create <nav> element to 15#
+  ~ may be you wondering, there's no visual change after create the nav element?
+  ~ <nav> element will be the invisible box, that contain the element it wrapped. you can style using
+    CSS later so you can see the visible change of the <nav> element.
+  ~ <nav> element doesn't do anything special, it just group the page navigation.
+  ~ There's another container element called <header>, we use this element to group
+    top-part of the page or blog-post or another container element, like page navigation and the first <h1> element.
+17# group the <h1> and <nav> using <header> element
+18# group the top part of the <article> element using <header> element
+  ~ now the blog-post is page after the <header> element.
+  ~ the common way to group the blog-post is <article> element, another container element.
+19# group the blog-post using <article> element
+  ~ when we have a bottom-part of a page, like 'Related Post', or link to another article.
+    we usually group them using <footer> element.
+20# create <footer> element after the <article> element.
