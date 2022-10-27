@@ -1,0 +1,9 @@
+~ semantic HTML is certain elements have actually a meaning or a purpose attached to them.
+  ~ we don't care of how element looks like on browser, instead we care about what the element
+    means and stands for.
+~ look at the 7# where we create <strong> element. we're creating strong, which a strong meaning to
+  element we created.
+~ if you look at the 16#, the <nav> element only create a box, visually it doesn't do anything.
+  ~ all it does is to represent the meaning that the element it wrapped is a navigation page.
+  ~ also we can replace <nav> element with <div> element, but the <div> doesn't has a meaning.
+  ~ it does the same for <header>, <footer>, <article>, and another container element.
