@@ -1,1 +1,27 @@
 1# create external CSS files to and link with index.html
+ ~ CSS rules always start with selector, which is the name of the element
+   or attribute of the current element.
+ ~ the value you pass to the property could be keyword(blue, bold, itali, etc) or a value(1,2,3,...).
+ ~ when you select an element as the selector, the style of CSS code will apply to all of the elements.
+=|=|=|=|=|=|=|=|=|=|=|=|=|=| PROPERTIES =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+1. font-size        : 10px;                             => specify the size of the text
+2. font-family      : Mono (, Consolas);                => specify the font of the text
+3. text-transform   : uppercase (, lowercase, inherit)  => specify the lower/upper of your text
+4. font-style       : bold (, italic, oblique)          => specify the style of the text
+5. line-height      : 1.5px (1,2,3...)                  => specify the line of each of your element.
+6. text-align       : center (justified, left, right)   => align the text.
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+2# style h1 using P1 to 26px, P2 to sans-serif, P3 to uppercase, P4 to italic
+3# style h2 using P1 to 40px, P2 to sans-serif
+4# style the p elements using P1 to 22px, P2 to sans-serif, P5 to 1.5;
+
+ ~ if you see there's an <strong>, <em>, and <a> element inside the <p> element that get style after 4#.
+   this is because Inheritance. but the style doesn't get applied to <li> element because it get twice 
+   inheritance.
+5# style h3 using P1 to 30px, P2 to sans-serif
+6# style h4 using P1 to 20px, P2 to sans-serif, P3 to uppercase, P6 to center
+7# style li using P1 to 22px and P2 to sans-serif
+
+ ~ if you look at the style of the style.css, we're repeating to style them right?
+   on CSS we can combine the selector

@@ -1,0 +1,41 @@
+/* 1 */
+
+/* 2 */
+h1 {
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* 3 */
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+/* 4 */
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* 5 */
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+/* 6 */
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* 7 */
+li {
+  font-size: 22px;
+  font-family: sans-serif;
+}
