@@ -41,3 +41,45 @@
 8# create an order list for word after '3 parts:'
 9# create an unorder list for word after 'Here are 5 of them:'
 
+~ <img> element has no content, and has no closing tag. instead of you add slash inside the <img /> like this.
+~ but <img> has we called attributes, attributes are basically piece of data which we can use describe the element
+  ~ there are a lot of different attributes for different element. the one of them is
+    <img src="/path/to/the/your/image/file">,
+    the 'src' attributes which describe the element from which the browser could display the image.
+    ~ 'alt' attributes stands for alternative text, it describe what the image is about.
+      ~ it helpfull when search engine look for image with its description.
+      ~ it also helpfull for screenreader when blind people use an internet.
+      ~ when you type wrong image filename, the img element will show the image using the
+        the description which you write on alt attributes.
+    ~ 'width' attributes will set the image to nWidth pixel
+    ~ 'height' attributes will set the image to nHeight pixel
+10# posted 'post-img.jpg' after word 'Posted by Laura Jones' using <img> element
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| CHALLENGE =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+~ include laura jones picture before 'Posted by laura jones' with 50x50 pixel
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=
+11# specify the language for this HTML using 'lang' attribute inside the HTML element
+12# specify the character set for this html document using 'charset' attribute inside meta element
+  ~ meta element indicate metadata which is a data about the data
+  ~ one of the fundamental building blocks of the internet is a hyperlink/links.
+  ~ we can place links into two categories:
+    ~ link that point to other pages within our websites.
+    ~ link that point to outside of our websites.
+    ~ link that point to nowhere, href='#'
+  ~ so to create a link element, we use <a> which stands for anchor.
+  ~ to make the link to point to another page, you use 'href' attributes
+  ~ you can't create a link without href attributes.
+  ~ to make the browser to open the link on new tab, you use 'target' attributes
+13# create anchor element for words 'MDN Web Docs';
+14# create a HTML file called blog.html
+15# create anchor element for new Word after 'The Code Magazine' inside index.html
+    to link to blog.html
+  # using the word blog, challenge, flexbox, css grid.
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| CHALLENGE =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+~ create a link inside blog.html to go back to index.html
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=
