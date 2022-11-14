@@ -4,6 +4,7 @@
     ~ the value you pass to the property could be keyword(blue, bold, itali, etc) or a value(1,2,3,...).
     ~ when you select an element as the selector, the style of CSS code will apply to all of the elements.
 =|=|=|=|=|=|=|=|=|=|=|=|=|=| PROPERTIES =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+----- TEXT-RELATED ----
 1.  font-size         : 10px;                             => specify the size of the text
 2.  font-family       : Mono (, Consolas);                => specify the font of the text
 3.  text-transform    : uppercase (, lowercase, inherit)  => specify the lower/upper of your text
@@ -13,6 +14,8 @@
 7.  color             : #1098ad                           => specify the color of the content's(text, line padding, margin) element
 8.  background-color  : #f7f7f7                           => specify the bg color for the element
 9.  list-style        : none (rectangular, circle)        => specify the form of the bullet point of the ul or ol element.
+
+----- BORDER ----
 10. border            : 5px solid #1098ad                 => specify the border's thickness of all side
 11. border            : 5px 5px solid #1098ad             => specify the border's thickness both for top and bottom.
 12. border            : 5px 2px 3px 5px solid #1098ad     => specify the border's thickness of all side
@@ -20,15 +23,37 @@
 12. border-left       : 5px dashed #1098ad                => specify the border's thickness for left side. 
 13. border-top        : 5px dotted #1098ad                => specify the border's thickness for top side.
 14. border-bottom     : 5px solid #1098ad                 => specify the border's thickness for bottom side.
+
+----- TEXT-RELATED ----
 15. text-decoration   : none(dotted, wavy, dashed)        => specify the underline style of the element's content.
 16. font-weight       : bold (5px, 10px)                  => specify the thickness of the font
+
+----- PADDING ----
+17. padding            : 5px solid #1098ad                 => specify the padding's space of all side
+18. padding            : 5px 5px solid #1098ad             => specify the padding's space both for top and bottom.
+19. padding            : 5px 2px 3px 5px solid #1098ad     => specify the padding's space of all side
+20. padding-right      : 5px solid #1098ad                 => specify the padding's space for right side.
+21. padding-left       : 5px dashed #1098ad                => specify the padding's space for left side. 
+22. padding-top        : 5px dotted #1098ad                => specify the padding's space for top side.
+23. padding-bottom     : 5px solid #1098ad                 => specify the padding's space for bottom side.
+
+
+----- MARGIN ----
+24. margin            : 5px solid #1098ad                 => specify the margin's space of all side
+25. margin            : 5px 5px solid #1098ad             => specify the margin's space both for top and bottom.
+26. margin            : 5px 2px 3px 5px solid #1098ad     => specify the margin's space of all side
+27. margin-right      : 5px solid #1098ad                 => specify the margin's space for right side.
+28. margin-left       : 5px dashed #1098ad                => specify the margin's space for left side. 
+29. margin-top        : 5px dotted #1098ad                => specify the margin's space for top side.
+30. margin-bottom     : 5px solid #1098ad                 => specify the margin's space for bottom side.
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
 =|=|=|=|=|=|=|=|=|=|=|=|=|=| PSUEDO-CLASS =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
-1. a:link     => select <a> element that has href attribute.
-2. a:visited  => style <a> after clicked.
-3. a:hover    => style <a> when mouse on top of the <a> element.
-4. a:active   => style <a> when you click the <a> element.
+1. a:link         => select <a> element that has href attribute.
+2. a:visited      => style <a> after clicked.
+3. a:hover        => style <a> when mouse on top of the <a> element.
+4. a:active       => style <a> when you click the <a> element.
+5. li:last-child  => style <li> element that's the last order.
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
 
@@ -60,4 +85,20 @@
 17# create a PC4 and style it using P8, and P4.
 18# create a class on author paragraph element and style it using P4, and P1.
 19# inheriting the values of 8# using <body> element selector
-    and commenting out the 8#
+    and commenting out the 8# and style the body using P13.
+20# style class "main-header" using P17.
+21# add style to 7# using P30.
+22# to make the last order of li doesn't have margin-bottom, style it to 0
+    using PC5 and put the style after the 7#.
+23# using universal selector(*) reset the P17 & P24 to 0. and put the style
+    on top of all the styles.
+24# style the <aside> element (13#) using P23 & P22 to 50px
+25# give space to 12# 60px at the bottom using P30.
+26# give space to 3# 30px at the bottom using P30.
+27# give the <header> inside the <article> class name to "post-header"
+  # and style it using P30 to 30px;
+  # put the style after the 12#
+28# style 4# using P30 to 15px;
+29# give the ol, li element style using P28 to 50px & P30 to 20px.
+30# style the 5# using P30 to 20px & P29 to 40px.
+31# give the <article> element style using P30 to 60px.

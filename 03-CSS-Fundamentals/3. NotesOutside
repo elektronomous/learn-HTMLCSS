@@ -1,42 +1,45 @@
-~ psuedo-class allow us to target different states of an element.
-  ~ for example <a> element has changed to violet after you click its
+= psuedo-class allow us to target different states of an element.
+  = for example <a> element has changed to violet after you click its
     content, now its state is changed.
-  ~ using psuedo-class give you to change the behaviour of the state's element.
-~ when you have a class attribute like this
+  = using psuedo-class give you to change the behaviour of the state's element.
+= when you have a class attribute like this
   
     <p class="paragraphs1 paragraphs2">Hello There</p>
   
-  ~ basically you have 2 class right here and when you style it inside the CSS files,
+  = basically you have 2 class right here and when you style it inside the CSS files,
     you go whether .paragraphs1 or .paragraphs2.
 
-~ There are 4 ways to write the selector.
-  ~ list selector       => the style applies to all the selector
+= There are 4 ways to write the selector.
+  = list selector       => the style applies to all the selector
 
       h1, h2, h3 {      /* applies style to h1, h2, h3 */
         ..: ..
       }
 
-  ~ descendent selector => the style applies to the child element inside the parent element.
+  = descendent selector => the style applies to the child element inside the parent element.
 
       footer p {        /* applies style to <p> element that's inside of all <footer> element */
         ..: ...
       }
   
-  ~ if you see on 18#, the <strong> element by default style its element to font-weight: bold. but when
+  = if you see on 18#, the <strong> element by default style its element to font-weight: bold. but when
     we style the parent element(<p> element), the strong element get it style from <p> element.
-    ~ this is called inheritance.
-  ~ inheritance is mechanism by which some styles(some properties) get their values inherited from parent
+    = this is called inheritance.
+  = inheritance is mechanism by which some styles(some properties) get their values inherited from parent
     elements to child elements.
-~ we can use <body> element to inherit our styles to child because body element is parent elements.
-  ~ commonly, the inherited style that get applies when using <body> element is the text elements.
-  ~ when you set border for the body element, it set only the border not the child element.
+= we can use <body> element to inherit our styles to child because body element is parent elements.
+  = commonly, the inherited style that get applies when using <body> element is the text elements.
+  = when you set border for the body element, it set only the border not the child element.
   
   body { 
     color: #444;
     font-family: sans-serif;
   }
 
-  ~ the body selector we create above, doesn't create conflicting selector or all elements applies it style.
+  = the body selector we create above, doesn't create conflicting selector or all elements applies it style.
     it's pure inheriting the style to the child elements.
-~ if you want to select all the element, you're using the universal selector. regardless whether the style is
+= if you want to select all the element, you're using the universal selector. regardless whether the style is
   related to text, or not, the style will applied to all the element.
+= If you see the GuidesForIndex which is the command 30# and inspect the element between h3 and p, the margin-top
+  between those element is not add up, instead occupying each other.
+  = This called collapsing margins.

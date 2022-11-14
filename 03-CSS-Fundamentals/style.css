@@ -1,9 +1,14 @@
 /* 1 */
-
+/* 23 */
+* {
+  padding: 0;
+  margin: 0;
+}
 /* 19 */
 body {
   color: #444;
   font-family: sans-serif;
+  border-top: 5px solid #1098ad;
 }
 /* 2 */
 h1 {
@@ -21,6 +26,8 @@ h2 {
   /* 8 
   font-family: sans-serif;
   */
+  /* 26 */
+  margin-bottom: 30px;
 }
 
 /* 4 */
@@ -30,6 +37,8 @@ p {
   font-family: sans-serif;
   */
   line-height: 1.5;
+  /* 28 */
+  margin-bottom: 15px;
 }
 
 /* 5 */
@@ -38,6 +47,9 @@ h3 {
   /* 8 
   font-family: sans-serif; 
   */
+  /* 30 */
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 /* 6 */
@@ -53,6 +65,13 @@ li {
   /* 8 
   font-family: sans-serif; 
   */
+
+  /* 21 */
+  margin-bottom: 10px;
+}
+/* 22 */
+li:last-child {
+  margin-bottom: 0px;
 }
 
 /* 8 */
@@ -86,6 +105,14 @@ h3 {
 /* 12 */
 .main-header {
   background-color: #f7f7f7;
+  /* 20 */
+  padding: 20px;
+  /* 25 */
+  margin-bottom: 60px;
+}
+/* 27 */
+.post-header {
+  margin-bottom: 30px;
 }
 
 /* 13 */
@@ -93,6 +120,13 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  /* 24 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  The alternative way:
+  */
+  padding: 50px 0px; /* top and bottom: 50px and left and right: 0px */
 }
 
 /* 14 */
@@ -124,4 +158,16 @@ a:active {
 #author {
   font-size: 18px;
   font-style: italic;
+}
+
+/* 29 */
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/* 30 */
+article {
+  margin-bottom: 60px;
 }
