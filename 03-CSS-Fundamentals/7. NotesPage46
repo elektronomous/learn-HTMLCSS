@@ -1,0 +1,13 @@
+= To account the whole width of the content, the margin is excluded
+
+        FINAL ELEMENT WIDTH = left_border + left_padding + width +
+                              right padding + right border.
+
+= The height do the same
+
+        FINAL ELEMENT HEIGHT = top_border + top_padding + height +
+                               bottom_padding + bottom_border
+
+= If you confuse why left_border/right_border/bottom_border/top_border is 
+  include when account the FINAL ELEMENT WIDTH
+  = It's because the border has thickness of its line.

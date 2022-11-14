@@ -1,0 +1,89 @@
+= The box model defines how elements are displayed on a webpage and how they
+  are displayed.
+= The box model can have contents, a border and space inside and outside of it.
+
+
+                    .-------------------.--.
+                    |----------width----|--|
+                    |                   |  |
+                    |                   |  |
+                    |           height  |  |
+                    |                   |  |
+                    | CONTENT           |  |
+                    |.------------------|-.|
+
+
+= Content can be text, images, or a table, a video, and so on.
+
+                      
+            .--------.----------------------------.
+            |                                     |
+            |                                     |
+            |       .V------------------o--.      |
+            |       |<---------width----Y->|      |
+            |       |                   |  |      |
+            |       |                   |  |      |
+            |       |               height |      |
+            |       |                   |  |      |
+            |       | CONTENT           Y  |      |
+            |       |.------------------|-.|      |
+            |                                     |
+            |                             BORDER  |
+            |.-----------------------------------.|
+
+= Border: A line around the element, still inside of the element.
+
+
+            .--------.----------------------------.
+            |        |                            |
+            |      PADDING                        |
+            |        |                            |
+            |       .V------------------o--.      |
+            |       |<---------width----Y->|      |
+            |       |                   |  |      |
+            |       |                   |  |      |
+            |       |               height |      |
+            |       |                   |  |      |
+            |       | CONTENT           Y  |      |
+            |       |.------------------|-.|      |
+            |                                     |
+            |                                     |
+            |                             BORDER  |
+            |.-----------------------------------.|
+
+= Padding is basically invisible white space that we can create around the elements content(inside element).
+  = between the content and the border
+
+
+     ______________________________________._____________
+    /                                      |             \
+    |                                    MARGIN          |
+    |                                      |             |
+    |       .--------.---------------------V------.      |
+    |       |        |                            |      |
+    |       |      PADDING                        |      |
+    |       |        |                            |      |
+    |       |       .V------------------o--.      |      |
+    |       |       |<---------width----Y->|      |      |
+    |       |       |                   |  |      |      |
+    |       |       |                   |  |      |      |
+    |       |       |               height |      |      |
+    |       |       |                   |  |      |      |
+    |       |       | CONTENT           Y  |      |      |
+    |       |       |.------------------|-.|      |      |
+    |       |                                     |      |
+    |       |                                     |      |
+    |       | FILL AREA                        BORDER    |
+    |       |.-----------------------------------.|      |
+    |                                                    |
+    |                                                    |
+    |                                                    |
+    \____________________________________________________/
+
+= Margin creates empty space around the elements(outside of element)
+= In practice, we use margin to create space between elements on our page.
+= FILL AREA is area that gets filled with background-color or background-images
+= The element occupies the content to the border.
+  = The margin itself is outside of the element.
+
+
