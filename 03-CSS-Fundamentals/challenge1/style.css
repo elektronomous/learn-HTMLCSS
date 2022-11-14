@@ -1,0 +1,33 @@
+body {
+  border: 5px solid black;
+  font-family: sans-serif;
+}
+
+h1 {
+  background-color: #f1ebeb;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a:hover,
+a:link {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: square;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+button {
+  background-color: black;
+  color: white;
+  border: 0px solid black;
+}

@@ -1,0 +1,20 @@
+~ we can represent color in computer(coding) using RGB model which is
+  a combination of RED, GREEN, BLUE.
+~ in CSS we have two way in writing color:
+  - RGB notation
+  - HEXADECIMAL notation
+~ RGB notation using rgb function to create the color
+    color: rgb(0, 255, 255);    // => blue
+    color: rgb(244, 179, 63);   // => orange
+~ There's also RGB notation with transparency
+    color: rgba(0, 255, 255, 0.3);  // => blue: with transparency of 0.3
+~ transparency is also called alpha that's why the function called RGBA.
+~ this transparency will be visible if you put the color on top of color
+  that's not a white color.
+~ the HEXADECIMAL notation use scale from 0 to ff, not like the rgb function.
+    color: #00ffff          // => blue
+    color: #fbb33f          // => orange
+~ the short version of HEXADECIMAL notation is like this:
+    color: #00ff          // => blue
+~ in real programming, the most use when coloring is HEXADECIMAL notation
+  but when you need transparency you use the rgb() function.

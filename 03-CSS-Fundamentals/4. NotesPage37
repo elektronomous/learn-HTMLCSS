@@ -1,0 +1,45 @@
+~ EXAMPLE CODE
+===================== HTML ===========================
+<p id="author-text class="author">
+    Posted by Laura Jones on Monday, June 21st 2027
+</p>
+======================================================
+====================== CSS ===========================
+.author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#author-text {
+    font-size: 20px;
+}
+
+p,
+li {
+    font-family: sans-serif;
+    color: #444444;
+    font-size: 22px;
+}
+======================================================
+~ There are multiple selectors selecting the same element.
+  Which one of them applies ?
+~ All of them. All rules and properties are applied.
+~ If you notice that there are conflicting font-size declaration.
+~ Is it 18px, 20px or 22px? => the answer is 20px
+~ do you know why ? let's see the rules below
+~ CSS Rules start from Highest to Lowest.
+
+HIGHEST -- Declartions marked as !important
+        -- Inline style(style attribute in HTML)
+        -- ID(#) selector                       => if there are multiple of them? => Last selector will applies
+        -- CLASS(.) or PSEUDO-CLASS(:)          => if there are multiple of them? => Last selector will applies
+        -- Element selector(p, div, li, etc)    => if there are multiple of them? => Last selector will applies
+        -- Universal selector(*)
+LOWEST  -- Inherited element style
+
+~ Remember, those all of the style is applied. the rules above is resolving for conflicting
+  rules.
+~ the !important keyword place inside the value of the property as the last value.
+~ the !important keyword is a hack that you can use as a last resort to resolve conflict
+  in your CSS.
+  

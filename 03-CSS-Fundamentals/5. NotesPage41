@@ -1,0 +1,36 @@
+===================== HTML ===========================
+<body>
+    <nav>
+        This is the navigation
+    </nav>
+
+    <h1>My Website</h1>
+
+    <p>
+        The text is this paragraph
+        is completely irrelevant
+    </p>
+</body>
+======================================================
+====================== CSS ===========================
+body {
+    color: #444444;
+    font-size: 16px;
+    font-family: sans-serif;
+
+    border-top: 10px solid #1098ad;
+}
+======================================================
+
+~ body element is the parent element.
+
+
+    color: #444444;
+    font-size: 16px;
+    font-family: sans-serif;
+~ the three properties above is applied to <nav>, <h1>, and <p> content text,
+  because those three properties are related to the text.
+  ~ only the border doesn't get inherited.
+~ Not all properties get inherited. It's mostly ones related to text:
+  font-family, font-style, font-weight, font-size, color, line-height,
+  letter-spacing, text-align, text-transform, text-shadow, list-style, etc.

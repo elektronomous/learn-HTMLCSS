@@ -1,9 +1,16 @@
 /* 1 */
 
+/* 19 */
+body {
+  color: #444;
+  font-family: sans-serif;
+}
 /* 2 */
 h1 {
   font-size: 26px;
+  /* 8
   font-family: sans-serif;
+  */
   text-transform: uppercase;
   font-style: italic;
 }
@@ -11,20 +18,26 @@ h1 {
 /* 3 */
 h2 {
   font-size: 40px;
+  /* 8 
   font-family: sans-serif;
+  */
 }
 
 /* 4 */
 p {
   font-size: 22px;
+  /* 8 
   font-family: sans-serif;
+  */
   line-height: 1.5;
 }
 
 /* 5 */
 h3 {
   font-size: 30px;
-  font-family: sans-serif;
+  /* 8 
+  font-family: sans-serif; 
+  */
 }
 
 /* 6 */
@@ -37,5 +50,78 @@ h4 {
 /* 7 */
 li {
   font-size: 22px;
-  font-family: sans-serif;
+  /* 8 
+  font-family: sans-serif; 
+  */
+}
+
+/* 8 */
+/* 19 
+
+h1,
+h2,
+h3,
+h4,
+li,
+p {
+  font-family: "sans-serif";
+  /* 10 
+  color: #444;
+}
+
+*/
+
+/* 9 */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+/* 11 */
+.related {
+  list-style: none;
+}
+
+/* 12 */
+.main-header {
+  background-color: #f7f7f7;
+}
+
+/* 13 */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* 14 */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* 15 */
+a:visited {
+  color: #1098ad;
+  /* both color property of a:visited and a:link is we seperated for learning-purpose */
+}
+
+/* 16 */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* 17 */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* 18 */
+#author {
+  font-size: 18px;
+  font-style: italic;
 }

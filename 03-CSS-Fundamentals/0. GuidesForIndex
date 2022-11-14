@@ -1,27 +1,63 @@
-1# create external CSS files to and link with index.html
- ~ CSS rules always start with selector, which is the name of the element
-   or attribute of the current element.
- ~ the value you pass to the property could be keyword(blue, bold, itali, etc) or a value(1,2,3,...).
- ~ when you select an element as the selector, the style of CSS code will apply to all of the elements.
+1#  create external CSS files to and link with index.html
+    ~ CSS rules always start with selector, which is the name of the element
+      or attribute of the current element.
+    ~ the value you pass to the property could be keyword(blue, bold, itali, etc) or a value(1,2,3,...).
+    ~ when you select an element as the selector, the style of CSS code will apply to all of the elements.
 =|=|=|=|=|=|=|=|=|=|=|=|=|=| PROPERTIES =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
-1. font-size        : 10px;                             => specify the size of the text
-2. font-family      : Mono (, Consolas);                => specify the font of the text
-3. text-transform   : uppercase (, lowercase, inherit)  => specify the lower/upper of your text
-4. font-style       : bold (, italic, oblique)          => specify the style of the text
-5. line-height      : 1.5px (1,2,3...)                  => specify the line of each of your element.
-6. text-align       : center (justified, left, right)   => align the text.
+1.  font-size         : 10px;                             => specify the size of the text
+2.  font-family       : Mono (, Consolas);                => specify the font of the text
+3.  text-transform    : uppercase (, lowercase, inherit)  => specify the lower/upper of your text
+4.  font-style        : bold (, italic, oblique)          => specify the style of the text
+5.  line-height       : 1.5px (1,2,3...)                  => specify the line of each of your element.
+6.  text-align        : center (justified, left, right)   => align the text.
+7.  color             : #1098ad                           => specify the color of the content's(text, line padding, margin) element
+8.  background-color  : #f7f7f7                           => specify the bg color for the element
+9.  list-style        : none (rectangular, circle)        => specify the form of the bullet point of the ul or ol element.
+10. border            : 5px solid #1098ad                 => specify the border's thickness of all side
+11. border            : 5px 5px solid #1098ad             => specify the border's thickness both for top and bottom.
+12. border            : 5px 2px 3px 5px solid #1098ad     => specify the border's thickness of all side
+11. border-right      : 5px solid #1098ad                 => specify the border's thickness for right side.
+12. border-left       : 5px dashed #1098ad                => specify the border's thickness for left side. 
+13. border-top        : 5px dotted #1098ad                => specify the border's thickness for top side.
+14. border-bottom     : 5px solid #1098ad                 => specify the border's thickness for bottom side.
+15. text-decoration   : none(dotted, wavy, dashed)        => specify the underline style of the element's content.
+16. font-weight       : bold (5px, 10px)                  => specify the thickness of the font
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
-2# style h1 using P1 to 26px, P2 to sans-serif, P3 to uppercase, P4 to italic
-3# style h2 using P1 to 40px, P2 to sans-serif
-4# style the p elements using P1 to 22px, P2 to sans-serif, P5 to 1.5;
+=|=|=|=|=|=|=|=|=|=|=|=|=|=| PSUEDO-CLASS =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+1. a:link     => select <a> element that has href attribute.
+2. a:visited  => style <a> after clicked.
+3. a:hover    => style <a> when mouse on top of the <a> element.
+4. a:active   => style <a> when you click the <a> element.
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
- ~ if you see there's an <strong>, <em>, and <a> element inside the <p> element that get style after 4#.
-   this is because Inheritance. but the style doesn't get applied to <li> element because it get twice 
-   inheritance.
-5# style h3 using P1 to 30px, P2 to sans-serif
-6# style h4 using P1 to 20px, P2 to sans-serif, P3 to uppercase, P6 to center
-7# style li using P1 to 22px and P2 to sans-serif
 
- ~ if you look at the style of the style.css, we're repeating to style them right?
-   on CSS we can combine the selector
+2#  style h1 using P1 to 26px, P2 to sans-serif, P3 to uppercase, P4 to italic
+3#  style h2 using P1 to 40px, P2 to sans-serif
+4#  style the p elements using P1 to 22px, P2 to sans-serif, P5 to 1.5;
+
+    ~ if you see there's an <strong>, <em>, and <a> element inside the <p> element that get style after 4#.
+      this is because Inheritance. but the style doesn't get applied to <li> element because it get twice 
+      inheritance.
+5#  style h3 using P1 to 30px, P2 to sans-serif
+6#  style h4 using P1 to 20px, P2 to sans-serif, P3 to uppercase, P6 to center
+7#  style li using P1 to 22px and P2 to sans-serif
+
+    ~ if you look at the style of the style.css, we're repeating to style them right?
+      on CSS we can combine the selector
+8#  commenting out the P2 on all selector, and create combined selector for the P2
+9#  style h1, h2, h3 using P7 to #1098ad
+10# style all of the element using P7 to #444 unless for h1, h2, h3 inside the 8#.
+    ~ when you set the color of the 10#, why the h1, h2, h3 doesn't get applied ?
+    ~ it's because you style it again after 8# inside the 9# which replace the color
+      of #444.
+11# create class for ul element and style the bullet point inside the aside element using P9 to none.
+12# create class for header element and style it using P8.
+13# style aside element using P13, P14, and P8. 
+14# create a PC1 and style it using P7, P16 and P15.
+15# create a PC2 and style it using P7.
+16# create a PC3 and style it using P7, P16 and P15.
+17# create a PC4 and style it using P8, and P4.
+18# create a class on author paragraph element and style it using P4, and P1.
+19# inheriting the values of 8# using <body> element selector
+    and commenting out the 8#
