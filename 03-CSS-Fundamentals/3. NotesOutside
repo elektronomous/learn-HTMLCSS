@@ -43,3 +43,13 @@
 = If you see the GuidesForIndex which is the command 30# and inspect the element between h3 and p, the margin-top
   between those element is not add up, instead occupying each other.
   = This called collapsing margins.
+= The auto value when you put it on height property for n width will automatically will fit the element to n width itself.
+= When using % instead of px in decide the size of the element, it will the % of the parent element.
+= When using auto as the value of two properties that are left or right, top and bottom.
+  = the left/right is the same on terms of value, it does so with the top and bottom.
+  = calculated automatically by the browsers, so when you increase or decrease the size of the browser' window
+    the element that you set its value to auto will fit itself each time the browser decrease/increase in size
+    of window. 
+= If you want to justify your container element, set the width to whatever the value you like, and give its margin
+  0 auto. if you don't set the width, browser width will applied which is the width of the browser's window that make
+  the margin can't center.

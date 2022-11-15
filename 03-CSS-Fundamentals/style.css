@@ -10,6 +10,16 @@ body {
   font-family: sans-serif;
   border-top: 5px solid #1098ad;
 }
+
+/* 35 */
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; 
+  The alternative way:
+  */
+  margin: 0 auto;
+}
 /* 2 */
 h1 {
   font-size: 26px;
@@ -109,6 +119,8 @@ h3 {
   padding: 20px;
   /* 25 */
   margin-bottom: 60px;
+  /* 33 */
+  height: 80px;
 }
 /* 27 */
 .post-header {
@@ -127,6 +139,8 @@ aside {
   The alternative way:
   */
   padding: 50px 0px; /* top and bottom: 50px and left and right: 0px */
+  /* 32 */
+  width: 500px;
 }
 
 /* 14 */
@@ -170,4 +184,10 @@ ul {
 /* 30 */
 article {
   margin-bottom: 60px;
+}
+
+/* 34 */
+.post-img {
+  width: 100%;
+  height: auto;
 }
