@@ -8,7 +8,9 @@
 body {
   color: #444;
   font-family: sans-serif;
-  border-top: 5px solid #1098ad;
+  border-top: 10px solid #1098ad;
+  /* 42 */
+  position: relative;
 }
 
 /* 35 */
@@ -38,6 +40,8 @@ h2 {
   */
   /* 26 */
   margin-bottom: 30px;
+  /* 44 */
+  position: relative;
 }
 
 /* 4 */
@@ -119,8 +123,11 @@ h3 {
   padding: 20px;
   /* 25 */
   margin-bottom: 60px;
-  /* 33 */
+  /* 33 
+     37
+  
   height: 80px;
+  */
 }
 /* 27 */
 .post-header {
@@ -190,4 +197,71 @@ article {
 .post-img {
   width: 100%;
   height: auto;
+}
+
+/* 36 */
+nav a:link {
+  /* 38 */
+  /* background-color: orangered; */
+   
+  /* this margin's top and bottom will not applied because <a> element is inline element
+  margin: 20px;
+  
+  /* if you set the property display to block:
+  
+  display: block
+
+     it change from inline to block level element, which make the margin's top and bottom
+     will be applied and the <a> element will occupy 100% of parent element(which is the <nav>)
+     and make a break line after the other <a> element.
+  
+  padding: 5px;
+  display: block;
+  */
+
+  /* 39 */
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+/* 40 */
+nav a:link:last-child {
+  margin-right: 0px;
+}
+  
+/* 41 */
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
+/* 43 */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* 44 */
+
+/*
+h2 { 
+  you just set this for reference position of h2::after content's property.
+  Once you've done, commenting out this selector.
+  
+  background-color: orange;
+}
+*/
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  right: -30px;
 }

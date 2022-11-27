@@ -51,5 +51,5 @@
     the element that you set its value to auto will fit itself each time the browser decrease/increase in size
     of window. 
 = If you want to justify your container element, set the width to whatever the value you like, and give its margin
-  0 auto. if you don't set the width, browser width will applied which is the width of the browser's window that make
+  "0 auto". if you don't set the width, browser width will applied which is the width of the browser's window that make
   the margin can't center.

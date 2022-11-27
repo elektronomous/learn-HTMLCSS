@@ -1,0 +1,20 @@
+= inline element occupy only exactly the space that's needed for the content.
+= inline element doesn't create a break line after or before the other element.
+= inline element the width and height style property don't have effect.
+= Also padding and margin are only applied horizontally(left and right).
+  
+        margin: 20px;
+  
+  = the margin will be top=bottom=0, and left=right=20px;
+  
+= You can also change the block level element by using css property:
+
+        display: inline;
+
+= inline has default element: 
+  [=] a
+  [=] img
+  [=] strong
+  [=] em
+  [=] button
+  [=] and so on.

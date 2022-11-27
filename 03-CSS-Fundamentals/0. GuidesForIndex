@@ -51,16 +51,45 @@
 ----- CONTENT ----
 31. width             : 500px solid black                 => specify the width of your content
 32. height            : 500px solid black                 => specify the height of your content
+
+----- BOXES ----
+33. display           : box                               => specify the element to be block element, occupies the 100% element
+34. display           : inline                            => specify the element to be inline element, occupies the content's space
+35. display           : inline-box                        => specify the outside element to be inline, the inside element to box.
+
+----- CURSOR ----
+36. cursor            : pointer                           => change mouse pointer when hover on top of the element
+
+----- POSITION ----
+37. position          : absolute                          => remove the element from its "in flow" position, so absolutely moveable
+38. position          : relative                          => make the element to be relative or "in flow".
+39. left              : 10%                               => specify the left position from its parent element
+40. right             : 10%                               => specify the right position from its parent element
+41. top               : 10%                               => specify the top position from its parent element
+42. bottom            : 10%                               => specify the bottom position from its parent element
+
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
 =|=|=|=|=|=|=|=|=|=|=|=|=|=| PSUEDO-CLASS =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
-1. a:link         => select <a> element that has href attribute.
-2. a:visited      => style <a> after clicked.
-3. a:hover        => style <a> when mouse on top of the <a> element.
-4. a:active       => style <a> when you click the <a> element.
-5. li:last-child  => style <li> element that's the last order.
+1. a:link             => select <a> element that has href attribute.
+2. a:visited          => style <a> after clicked.
+3. a:hover            => style <a> when mouse on top of the <a> element.
+4. a:active           => style <a> when you click the <a> element.
+6. a:last-child       => select all <a> element that's the last-child element of its parent element.
+7. li: first-child    => select all <li> element that's the first-child element of its parent element.
+8. li: nth-child(N)   => select all <li> element that's the N-child element of its parent element.
+   li: nth-child(odd) => select all <li> element that's odd-child element of its parent element.
+   li: nth-child(even) => select all <li> element that's even-child element of its parent element.
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
+=|=|=|=|=|=|=|=|=|=|=|=|=|=| PSUEDO-ELEMENTS |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+1. h1::first-letter         => select all <h1> element's first-letter
+2. p::first-line            => select all <p> element's first-line 
+3. h3 + p::first-line       => select all <p> element's first-line that's <p> elements are after <h3> element
+4. h2::after                => combine with content's property to create a text after h2 and in css, it
+                            => select the content's property that've you set. 
+5. 
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
 2#  style h1 using P1 to 26px, P2 to sans-serif, P3 to uppercase, P4 to italic
 3#  style h2 using P1 to 40px, P2 to sans-serif
@@ -111,3 +140,33 @@
 33# using P32 to set the height for the first <header> element on 12#
 34# give the image class called "post-img" and style it using P31, and P32.
 35# create a box which not semantic and style it using P31, P27 and P28.
+36# style the navigation link using P8, and give PC1 to the link 
+
+    ~ When you set fix style using height to <nav> element, and you make the child element <a>'s 
+      display to block, if the number of <a> elements create line break is more than <nav>'s height,
+      the <a> element will be create outside the <nav>(kind like overstack the <nav> element).
+      ~ why <nav> element doesn't expanded ?
+        ~ Because you've set the fix height of the <nav>, if you remove the <nav>'s height
+          it expands its height to the height of number of <a> element that's created.
+
+37# remove the P32 from 12#
+38# comment out the 36# property, because it just a demo
+
+    ~ If you set the margin-top(P29) on 36# to n_px, that's nothing change because,
+      <a> element is inline element, change it to P35 so the margin-top has effect.
+
+39# style the 36# using P35, P27, and P29.
+40# style the last element of <a> of 36# using PC6
+
+    ~ You can chain the PSUEDO-CLASS like this:
+          nav a:link:last-child {
+            ...
+          }
+41# create a button like inside index.html outside the contianer element
+    (before <footer> element).
+  # style it using P1, P17, P36, P37, P39, and P40.
+
+42# style the 19# using P38.
+43# set the 2# PE2's style to P27, P4
+44# set the 3# PE4's style to P8, font-weight, P35, P17, P40, and P41.
+  # to make the content's property moveable, set the h2 to be relative positioning.

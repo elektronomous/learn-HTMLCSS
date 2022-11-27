@@ -1,0 +1,9 @@
+= There's a mix of inline and block elements called inline-block
+= This kind of boxes look like inlines from the outside, but they behave
+  like block level element in the inside.
+  = It occupies only content's space (outside of the element)
+  = Causes no line-breaks (outside of the element)
+  = We can still set height and width, padding and margins just like on block
+    level elements(inside of the elements)
+
+= For some reason, <img> element is inline-box by default.

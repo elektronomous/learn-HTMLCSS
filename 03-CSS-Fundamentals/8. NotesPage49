@@ -1,0 +1,25 @@
+= Block level elements occupy all the spaces that they can and they create
+  a line break after them or another word, it cannot side by side by another
+  element.
+= Block level elements occupy 100% of parent's element width, no matter the content.
+= Elements are stacked vertically by default, one afte another.
+= Block level elements are:
+  [=] body
+  [=] main
+  [=] header
+  [=] footer
+  [=] section
+  [=] nav
+  [=] aside
+  [=] div
+  [=] h1 to h6
+  [=] p
+  [=] ul
+  [=] ol
+  [=] li
+  [=] and so on
+= You can set the an element that's not a block by specify the css code:
+    
+        display: block;
+
+=

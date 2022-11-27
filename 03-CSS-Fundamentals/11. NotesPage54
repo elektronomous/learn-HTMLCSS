@@ -1,0 +1,16 @@
+= The default position of an element called Normal flow.
+= You can also get the Normal flow by set css property:
+
+        position: relative;
+
+= Normal flow means elements are "in flow", The elements are laid
+  out according to their order in HTML code.
+= There's a position called absolute position which allow us to absolutely position
+  element anywhere on the page.
+    
+        position: absolute;
+    
+= Set the style to absolute, the element will remove from the normal flow;
+  "out of flow"
+= This absolute position doesn't impact another element, instead it overlaps 
+  another element.
