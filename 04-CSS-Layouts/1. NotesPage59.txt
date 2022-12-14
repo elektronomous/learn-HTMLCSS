@@ -1,0 +1,18 @@
+= When we say layout, we means the way the text, images and other contents are placed arranged
+  on the webpage.
+= Layout gives the page a visual structure, into which we place our content.
+= Building layout: arranging page elements into a visual structure, instead of simply having them
+  placed one after another (normal flow).
+= There are two type of layouts: 
+  [=] Page layout           => laying out the elements(the big piece of content inside of a webpage)
+  [=] Component Layout      => laying out the sub element of the page.
+
+= There are 3 ways to build layout:
+
+  
+  [=] Float Layout          => using float CSS property (the old way and outdated).
+  [=] Flexbox               => perfect for building one dimensional layouts, which a layout which is
+                               just a row(modern way) without using floats.
+                            => perfect for component layout.
+  [=] CSS Grid              => For laying out element in a fully-fledged 2-dimensional grid.
+                            => Perfect for page layouts and complex components

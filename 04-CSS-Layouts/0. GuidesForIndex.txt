@@ -1,0 +1,99 @@
+=|=|=|=|=|=|=|=|=|=|=|=|=|=| PROPERTIES =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+----- TEXT-RELATED ----
+1.  font-size         : 10px;                             => specify the size of the text
+2.  font-family       : Mono (, Consolas);                => specify the font of the text
+3.  text-transform    : uppercase (, lowercase, inherit)  => specify the lower/upper of your text
+4.  font-style        : bold (, italic, oblique)          => specify the style of the text
+5.  line-height       : 1.5px (1,2,3...)                  => specify the line of each of your element.
+6.  text-align        : center (justified, left, right)   => align the text.
+7.  color             : #1098ad                           => specify the color of the content's(text, line padding, margin) element
+8.  background-color  : #f7f7f7                           => specify the bg color for the element
+9.  list-style        : none (rectangular, circle)        => specify the form of the bullet point of the ul or ol element.
+
+----- BORDER ----
+10. border            : 5px solid #1098ad                 => specify the border's thickness of all side
+11. border            : 5px 5px solid #1098ad             => specify the border's thickness both for top and bottom.
+12. border            : 5px 2px 3px 5px solid #1098ad     => specify the border's thickness of all side
+11. border-right      : 5px solid #1098ad                 => specify the border's thickness for right side.
+12. border-left       : 5px dashed #1098ad                => specify the border's thickness for left side. 
+13. border-top        : 5px dotted #1098ad                => specify the border's thickness for top side.
+14. border-bottom     : 5px solid #1098ad                 => specify the border's thickness for bottom side.
+
+----- TEXT-RELATED ----
+15. text-decoration   : none(dotted, wavy, dashed)        => specify the underline style of the element's content.
+16. font-weight       : bold (5px, 10px)                  => specify the thickness of the font
+
+----- PADDING ----
+17. padding            : 5px solid #1098ad                 => specify the padding's space of all side
+18. padding            : 5px 5px solid #1098ad             => specify the padding's space both for top and bottom.
+19. padding            : 5px 2px 3px 5px solid #1098ad     => specify the padding's space of all side
+20. padding-right      : 5px solid #1098ad                 => specify the padding's space for right side.
+21. padding-left       : 5px dashed #1098ad                => specify the padding's space for left side. 
+22. padding-top        : 5px dotted #1098ad                => specify the padding's space for top side.
+23. padding-bottom     : 5px solid #1098ad                 => specify the padding's space for bottom side.
+
+
+----- MARGIN ----
+24. margin            : 5px solid #1098ad                 => specify the margin's space of all side
+25. margin            : 5px 5px solid #1098ad             => specify the margin's space both for top and bottom.
+26. margin            : 5px 2px 3px 5px solid #1098ad     => specify the margin's space of all side
+27. margin-right      : 5px solid #1098ad                 => specify the margin's space for right side.
+28. margin-left       : 5px dashed #1098ad                => specify the margin's space for left side. 
+29. margin-top        : 5px dotted #1098ad                => specify the margin's space for top side.
+30. margin-bottom     : 5px solid #1098ad                 => specify the margin's space for bottom side.
+
+
+----- CONTENT ----
+31. width             : 500px solid black                 => specify the width of your content
+32. height            : 500px solid black                 => specify the height of your content
+
+----- BOXES ----
+33. display           : box                               => specify the element to be block element, occupies the 100% element
+34. display           : inline                            => specify the element to be inline element, occupies the content's space
+35. display           : inline-box                        => specify the outside element to be inline, the inside element to box.
+
+----- CURSOR ----
+36. cursor            : pointer                           => change mouse pointer when hover on top of the element
+
+----- POSITION ----
+37. position          : absolute                          => remove the element from its "in flow" position, so absolutely moveable
+38. position          : relative                          => make the element to be relative or "in flow".
+39. left              : 10%                               => specify the left position from its parent element
+40. right             : 10%                               => specify the right position from its parent element
+41. top               : 10%                               => specify the top position from its parent element
+42. bottom            : 10%                               => specify the bottom position from its parent element
+
+
+----- FLOATS-RELATED ----
+43.  float               : left (right, none, ..)            => taken out the element of the document flow just like an
+                                                            => absolutely positioned element.
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=| PSUEDO-CLASS =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+1. a:link             => select <a> element that has href attribute.
+2. a:visited          => style <a> after clicked.
+3. a:hover            => style <a> when mouse on top of the <a> element.
+4. a:active           => style <a> when you click the <a> element.
+6. a:last-child       => select all <a> element that's the last-child element of its parent element.
+7. li: first-child    => select all <li> element that's the first-child element of its parent element.
+8. li: nth-child(N)   => select all <li> element that's the N-child element of its parent element.
+   li: nth-child(odd) => select all <li> element that's odd-child element of its parent element.
+   li: nth-child(even) => select all <li> element that's even-child element of its parent element.
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=| PSUEDO-ELEMENTS |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+1. h1::first-letter         => select all <h1> element's first-letter
+2. p::first-line            => select all <p> element's first-line 
+3. h3 + p::first-line       => select all <p> element's first-line that's <p> elements are after <h3> element
+4. h2::after                => combine with content property to create a text after h2 and in css, it
+                            => select the content property that've you set. 
+                            
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+
+1#  Give the <img> element of laura-jones a class
+ #  and its <p> below it.
+2#  style the <img> class on 1# using P30 and P43
+3#  style the <p> class on 1# using P28 and P29.
+4#  style the h1 to P43 and <nav> element after the <h1> using P43

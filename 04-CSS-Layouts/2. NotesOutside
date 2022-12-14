@@ -1,0 +1,59 @@
+= When using float, the element is out of the document like the absolute position.
+= The difference between float and absolute position is that all the other element 
+  will floating around the element that set the float property.
+= When you set the float to be left, Implicityly the left margin of the element that's near the element that has been 
+  set to float will become the FINAL_ELEMENT_WIDTH of the element that has been set to float.
+  = This set to another value of the float property too.
+
+  
+= float could be visually like this:
+        ._._._._._._._._._._._._._._._._._._._._._._._._._._
+        |BODY                                              |
+        |                                                  | 
+        |   ._._._._._._._                                 |
+        |   |            |                                 |
+        |   |    BOX1    |                                 |  
+        |   |            |                                 |
+        |   |_._._._._._.|                                 |
+        |   ._._._._._._._                                 |
+        |   |            |                                 |
+        |   |    BOX2    |                                 |  
+        |   |            |                                 |
+        |   |_._._._._._.|                                 |
+        |   ._._._._._._._                                 |
+        |   |            |                                 |
+        |   |    BOX3    |                                 |  
+        |   |            |                                 |
+        |   |_._._._._._.|                                 |
+        |                                                  |
+        |                                                  |
+        |_._._._._._._._._._._._._._._._._._._._._._._._._.|
+
+            BOX1 {
+                float: left;
+            }
+
+        ._._._._._._._._._._._._._._._._._._._._._._._._._._
+        |BODY                                              |
+        |                                                  | 
+        |   ._._._._._._._ ._._._._._._._                  |
+        |   |            | |            |                  |
+        |   |    BOX1    | |   BOX2     |                  |
+        |   |            | |            |                  |
+        |   |_._._._._._.| |_._._._._._.|                  |
+        |   ._._._._._._._                                 |
+        |   |            |                                 |
+        |   |    BOX3    |                                 |  
+        |   |            |                                 |
+        |   |_._._._._._.|                                 |
+        |                                                  |
+        |_._._._._._._._._._._._._._._._._._._._._._._._._.|
+
+= After you set the 4# the grey background of the class container will lost 
+  its height and still has the background.
+  why ? 
+  = This because class container has padding still set
+  = both h1 and nav is the child element of header element, which are floated.
+    = These means that the element would(like) not even be on the page (they're removed).
+      And now the element has no content anymore, so that makes the class container has 
+      0 height.

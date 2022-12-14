@@ -1,0 +1,18 @@
+.box1  {
+    padding: 10px 10px;
+    display: inline-block;
+}
+.box2, .box3 {
+    padding: 10px 10px;
+}
+
+.box1 {
+    float: left;
+    background-color: blue;
+}
+.box2 {
+    background-color: yellow;
+}
+.box3 {
+    background-color: green;
+}
