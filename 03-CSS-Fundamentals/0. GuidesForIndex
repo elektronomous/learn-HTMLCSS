@@ -86,8 +86,8 @@
 1. h1::first-letter         => select all <h1> element's first-letter
 2. p::first-line            => select all <p> element's first-line 
 3. h3 + p::first-line       => select all <p> element's first-line that's <p> elements are after <h3> element
-4. h2::after                => combine with content's property to create a text after h2 and in css, it
-                            => select the content's property that've you set. 
+4. h2::after                => combine with content property to create a text after h2 and in css, it
+                            => select the content property that've you set. 
 5. 
 =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 
